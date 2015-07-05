@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://browser/content/places/places.css"?>
+<?xml-stylesheet href="chrome://browser/content/places/organizer.css"?>
+
+<?xml-stylesheet href="chrome://browser/skin/places/places.css"?>
+<?xml-stylesheet href="chrome://browser/skin/places/organizer.css"?>
+
+<?xul-overlay href="chrome://browser/content/places/editBookmarkOverlay.xul"?>
+
+<?xul-overlay href="chrome://browser/content/baseMenuOverlay.xul"?>
+<?xul-overlay href="chrome://global/content/editMenuOverlay.xul"?>
+<?xul-overlay href="chrome://browser/content/places/placesOverlay.xul"?>
+
+<!DOCTYPE window [
+<!ENTITY % placesDTD SYSTEM "chrome://browser/locale/places/places.dtd">
+%placesDTD;
+<!ENTITY % editMenuOverlayDTD SYSTEM "chrome://global/locale/editMenuOverlay.dtd">
+%editMenuOverlayDTD;
+<!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd">
+%browserDTD;
+]>
+
+<window id="places"
+        title="&places.library.title;"
+        windowtype="Places:Organizer"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        xmlns:html="http://www.w3.org/1999/xhtml"
+        onload="PlacesOrganizer.init();"
+        onunload="PlacesOrganizer.destroy();"
+        width="&places.library.width;" height="&places.library.height;"
+        screenX="10" screenY="10"
+        toggletoolbar="true"
+        persist="width height screenX screenY sizemode">
+
+  <script type="application/javascript"
+          src="chrome://browser/content/places/places.js"/>
+  <script type="application/javascript"
+          src="chrome://browser/content/utilityOverlay.js"/>
+  <script type="application/javascript"
+          src="chrome://browser/content/places/editBookmarkOverlay.js"/>
+
+    <tree id="placesList"
+          class="plain placesTree"
+          type="places"
+          hidecolumnpicker="true" context="placesContext"
+          onselect="PlacesOrganizer.onPlaceSelected(true);"
+          onclick="PlacesOrganizer.onPlacesListClick(event);"
+          onfocus="PlacesOrganizer.updateDetailsPane(event);"
+          seltype="single"
+          persist="width"
+          width="200"
+          minwidth="100"
+          maxwidth="400">
+      <treecols>
+        <treecol anonid="title" flex="1" primary="true" hideheader="true"/>
+      </treecols>
+      <treechildren flex="1"/>
+    </tree>
+</window>

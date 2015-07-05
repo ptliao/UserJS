@@ -1,0 +1,3 @@
+<overlay id="UserJS_89415119@qq.com" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="chrome://UserJS/content/init.js"/>  
+</overlay>

@@ -1,0 +1,2 @@
+overlay chrome://browser/content/browser.xul chrome://UserJS/content/overlay.xul
+content   userjs       content/

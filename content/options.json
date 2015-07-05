@@ -1,0 +1,38 @@
+{
+	"short": {
+		"UserLib": "chrome://UserJS/content/",
+		"USL": "UChrm:///UserScriptLoader/",
+		"UserJS": "UChrm:///UserJS/"
+	},
+	"path": {
+		"Prefs": "UserLib:///utils/Prefs.js",
+		"UTIL": "UserLib:///utils/UTIL.js",
+		"RSA": "UserLib:///utils/RSA.js",
+		"Group": "UserLib:///utils/Group.js",
+		"Post": "UserLib:///utils/Post.js",
+		"jsBeautify": "UserLib:///utils/jsBeautify.js",
+		
+		"CONFIG": "UserLib:///utils/CONFIG.js",
+		"CLEAR": "UserLib:///utils/CLEAR.js",
+		"PATH_MANAGE": "UserLib:///utils/PATH_MANAGE.js",
+		"dateFormat": "UserLib:///utils/dateFormat.js",
+		"Timer": "UserLib:///utils/Timer.js",
+		"Worker": "UserLib:///utils/Worker.js",
+		"DateBase": "UserLib:///datebase/DateBase.js",
+		"Canvas": "UserLib:///img/Canvas.js",
+		"COOKIES": "UserLib:///network/COOKIES.js",
+		"Ajax": "UserLib:///network/Ajax.js",
+		
+		"CACHE": "UserLib:///network/CACHE.js",
+		"Socket": "UserLib:///network/Socket.js",
+		"PROXY_OBSERVER": "UserLib:///network/PROXY_OBSERVER.js",
+		"ServerSocket": "UserLib:///network/ServerSocket.js",
+		
+		"HTTP_OBSERVER": "UserLib:///UserJS/network/HTTP_OBSERVER.js",
+		"COOKIE_MANAGE": "UserLib:///UserJS/network/COOKIE_MANAGE.js",
+		"INFO_MANAGE": "UserLib:///UserJS/network/INFO_MANAGE.js",
+		"OPTS_MANAGE": "UserLib:///UserJS/network/OPTS_MANAGE.js",
+		
+		"AND:COOKIE_MANAGE": "UserLib:///UserJS/network/COOKIE_MANAGE_AND.js"
+	}
+}
